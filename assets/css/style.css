@@ -1673,3 +1673,199 @@ textarea.form-control {
   display: block;
   margin-bottom: 4px;
 }
+
+/* ===================================================================
+   BILINGUAL (ARABIC / ENGLISH) & UI ENHANCEMENTS
+   =================================================================== */
+
+/* Language Visibility */
+html[lang="ar"] .lang-en {
+  display: none !important;
+}
+
+html[lang="en"] .lang-ar {
+  display: none !important;
+}
+
+/* Language Toggle Button in Navbar */
+.lang-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  color: #38bdf8;
+  padding: 8px 16px;
+  border-radius: var(--radius-full);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 0 12px rgba(56, 189, 248, 0.15);
+}
+
+.lang-toggle-btn:hover {
+  background: rgba(14, 165, 233, 0.25);
+  border-color: #38bdf8;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.35);
+}
+
+.lang-toggle-btn i {
+  font-size: 1rem;
+}
+
+/* ===================================================================
+   LTR STYLES (When Language is English)
+   =================================================================== */
+html[dir="ltr"] body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  text-align: left;
+}
+
+html[dir="ltr"] .brand-titles {
+  text-align: left;
+}
+
+html[dir="ltr"] .hero-content {
+  text-align: left;
+}
+
+html[dir="ltr"] .about-content {
+  text-align: left;
+}
+
+html[dir="ltr"] .about-experience-badge {
+  left: auto;
+  right: 25px;
+}
+
+html[dir="ltr"] .floating-badge.badge-top {
+  right: auto;
+  left: -25px;
+}
+
+html[dir="ltr"] .floating-badge.badge-bottom {
+  left: auto;
+  right: -25px;
+}
+
+html[dir="ltr"] .metrics-box .metric-item {
+  border-left: none;
+  border-right: 1px solid var(--border-glass);
+}
+
+html[dir="ltr"] .metrics-box .metric-item:last-child {
+  border-right: none;
+}
+
+html[dir="ltr"] .timeline {
+  border-right: none;
+  border-left: 2px solid rgba(56, 189, 248, 0.3);
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+html[dir="ltr"] .timeline-dot {
+  right: auto;
+  left: -39px;
+}
+
+html[dir="ltr"] .timeline-header {
+  flex-direction: row-reverse;
+}
+
+html[dir="ltr"] .client-category-tag {
+  right: auto;
+  left: 12px;
+}
+
+html[dir="ltr"] .project-badge {
+  right: auto;
+  left: 15px;
+}
+
+html[dir="ltr"] .project-link-btn i {
+  transform: rotate(180deg);
+}
+
+html[dir="ltr"] .contact-info-panel {
+  text-align: left;
+}
+
+html[dir="ltr"] .contact-form-panel {
+  text-align: left;
+}
+
+html[dir="ltr"] .form-group label {
+  text-align: left;
+}
+
+html[dir="ltr"] .hero-actions {
+  justify-content: flex-start;
+}
+
+html[dir="ltr"] .hero-socials {
+  justify-content: flex-start;
+}
+
+html[dir="ltr"] .about-features-grid .about-feature-item {
+  text-align: left;
+}
+
+html[dir="ltr"] .skill-cat-header {
+  text-align: left;
+}
+
+html[dir="ltr"] .service-box {
+  text-align: left;
+}
+
+html[dir="ltr"] .channel-details {
+  text-align: left;
+}
+
+html[dir="ltr"] .footer-content {
+  text-align: center;
+}
+
+/* Button & Card Hover Refinements */
+.btn {
+  font-family: inherit;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 8px 25px rgba(14, 165, 233, 0.45);
+}
+
+.btn-whatsapp:hover {
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.45);
+}
+
+.filter-btn {
+  font-family: inherit;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.filter-btn:hover {
+  border-color: var(--accent-cyan);
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.3) 0%, rgba(37, 99, 235, 0.3) 100%);
+  border-color: var(--accent-cyan);
+  color: #fff;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
