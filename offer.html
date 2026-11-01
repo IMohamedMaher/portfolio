@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>عرض حصري لشركاء ميتو فلاي | المهندس محمد ماهر — Micro Link</title>
+  <meta name="description" content="عرض خاص وحصري لعملاء ومتابعي شركة ميتو فلاي ترافيل: صمم موقعك الإلكتروني الشامل بالدومين والاستضافة بأقوى خصم مع م/ محمد ماهر.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="shortcut icon" href="favicon.ico">
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    :root {
+      --bg-dark: #050811;
+      --bg-card: rgba(13, 20, 36, 0.85);
+      --accent-cyan: #38bdf8;
+      --accent-amber: #f59e0b;
+      --accent-green: #22c55e;
+      --border-glow: rgba(56, 189, 248, 0.35);
+      --font-ar: 'Cairo', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-dark);
+      color: #f1f5f9;
+      font-family: var(--font-ar);
+      line-height: 1.7;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(14, 165, 233, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(245, 158, 11, 0.12) 0%, transparent 45%);
+    }
+
+    .container {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .top-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .top-brand img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 2px solid var(--accent-cyan);
+    }
+
+    .top-badge {
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: #fbbf24;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Hero Offer */
+    .hero-offer {
+      text-align: center;
+      padding: 55px 0 35px 0;
+    }
+
+    .promo-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(14, 165, 233, 0.2) 100%);
+      border: 1px solid var(--accent-amber);
+      color: #fff;
+      padding: 8px 22px;
+      border-radius: 50px;
+      font-size: 0.95rem;
+      font-weight: 800;
+      margin-bottom: 22px;
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.3);
+    }
+
+    .hero-offer h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.3;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 50%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-offer p {
+      font-size: 1.15rem;
+      color: #94a3b8;
+      max-width: 750px;
+      margin: 0 auto 30px auto;
+    }
+
+    /* Live Proof Banner (MetoFly) */
+    .proof-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-glow);
+      border-radius: 20px;
+      padding: 25px 30px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 50px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .proof-info {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-align: right;
+    }
+
+    .proof-icon {
+      width: 55px;
+      height: 55px;
+      background: rgba(14, 165, 233, 0.15);
+      border: 1px solid var(--accent-cyan);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      color: var(--accent-cyan);
+      flex-shrink: 0;
+    }
+
+    .proof-details h4 {
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .proof-details p {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .proof-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #38bdf8;
+      padding: 10px 20px;
+      border-radius: 12px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .proof-btn:hover {
+      background: rgba(14, 165, 233, 0.2);
+      border-color: var(--accent-cyan);
+      transform: translateY(-2px);
+    }
+
+    /* Pricing Comparison Cards */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .pricing-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 24px;
+      padding: 35px 28px;
+      position: relative;
+      transition: all 0.35s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pricing-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.5);
+    }
+
+    .pricing-card.featured {
+      border: 2px solid var(--accent-amber);
+      background: linear-gradient(180deg, rgba(245, 158, 11, 0.08) 0%, rgba(13, 20, 36, 0.95) 100%);
+      box-shadow: 0 0 35px rgba(245, 158, 11, 0.2);
+    }
+
+    .popular-tag {
+      position: absolute;
+      top: -14px;
+      right: 25px;
+      background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+      color: #000;
+      font-size: 0.8rem;
+      font-weight: 900;
+      padding: 4px 16px;
+      border-radius: 50px;
+      box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+    }
+
+    .card-title {
+      font-size: 1.45rem;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .card-desc {
+      font-size: 0.92rem;
+      color: #94a3b8;
+      margin-bottom: 25px;
+      min-height: 45px;
+    }
+
+    .price-box {
+      margin-bottom: 25px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .original-price {
+      font-size: 1.15rem;
+      color: #ef4444;
+      text-decoration: line-through;
+      margin-bottom: 4px;
+      font-weight: 700;
+    }
+
+    .current-price {
+      font-size: 2.8rem;
+      font-weight: 900;
+      color: #fff;
+      line-height: 1;
+    }
+
+    .current-price span {
+      font-size: 1.15rem;
+      color: #94a3b8;
+      font-weight: 600;
+    }
+
+    .savings-badge {
+      display: inline-block;
+      margin-top: 8px;
+      background: rgba(34, 197, 94, 0.15);
+      border: 1px solid rgba(34, 197, 94, 0.35);
+      color: #4ade80;
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 3px 12px;
+      border-radius: 6px;
+    }
+
+    .features-list {
+      list-style: none;
+      margin-bottom: 30px;
+      flex-grow: 1;
+    }
+
+    .features-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.96rem;
+      color: #cbd5e1;
+      margin-bottom: 14px;
+    }
+
+    .features-list li i {
+      color: var(--accent-cyan);
+      margin-top: 4px;
+      font-size: 1rem;
+    }
+
+    .features-list li.highlight {
+      color: #fbbf24;
+      font-weight: 700;
+    }
+
+    .features-list li.highlight i {
+      color: #fbbf24;
+    }
+
+    .btn-claim {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      padding: 15px;
+      border-radius: 14px;
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+
+    .btn-claim-primary {
+      background: linear-gradient(135deg, #f59e0b 0%, #0ea5e9 100%);
+      color: #000;
+      box-shadow: 0 8px 25px rgba(245, 158, 11, 0.35);
+    }
+
+    .btn-claim-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5);
+      color: #000;
+    }
+
+    .btn-claim-outline {
+      background: rgba(14, 165, 233, 0.12);
+      border: 1px solid var(--accent-cyan);
+      color: #38bdf8;
+    }
+
+    .btn-claim-outline:hover {
+      background: rgba(14, 165, 233, 0.25);
+      transform: translateY(-3px);
+    }
+
+    /* Free Value Included Section */
+    .free-value-banner {
+      background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(14, 165, 233, 0.1) 100%);
+      border: 1px dashed rgba(74, 222, 128, 0.4);
+      border-radius: 20px;
+      padding: 28px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .free-value-banner h3 {
+      font-size: 1.4rem;
+      color: #4ade80;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .free-value-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin-top: 20px;
+    }
+
+    .free-item {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 15px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .free-item strong {
+      display: block;
+      color: #fff;
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+
+    .free-item span {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    /* Engineer Trust Badge */
+    .trust-section {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 20px;
+      padding: 35px;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .trust-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid var(--accent-cyan);
+      margin: 0 auto 15px auto;
+      display: block;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+    }
+
+    .trust-section h4 {
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 4px;
+    }
+
+    .trust-section p.role {
+      color: #f59e0b;
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .trust-section p.bio {
+      color: #94a3b8;
+      max-width: 680px;
+      margin: 0 auto 20px auto;
+      font-size: 0.95rem;
+    }
+
+    .trust-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .trust-links a {
+      color: #38bdf8;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 30px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      color: #64748b;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .proof-card {
+        flex-direction: column;
+        text-align: center;
+      }
+      .proof-info {
+        flex-direction: column;
+        text-align: center;
+      }
+      .proof-btn {
+        width: 100%;
+        justify-content: center;
+      }
+      .current-price {
+        font-size: 2.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Top Header -->
+    <header class="top-bar">
+      <a href="https://mohamedmaher.info" class="top-brand">
+        <img src="assets/images/favicon.png" alt="المهندس محمد ماهر">
+        <div>
+          <div style="font-weight: 800; font-size: 1.05rem;">م/ محمد ماهر</div>
+          <div style="font-size: 0.75rem; color: #94a3b8;">Founder & CEO @ Micro Link</div>
+        </div>
+      </a>
+
+      <div class="top-badge">
+        <i class="fa-solid fa-gift"></i>
+        <span>كود الخصم: METOFLY</span>
+      </div>
+    </header>
+
+    <!-- Hero Offer -->
+    <section class="hero-offer">
+      <div class="promo-pill">
+        <i class="fa-solid fa-fire"></i>
+        <span>عرض خاص وحصري لعملاء وشركاء ميتو فلاي (MetoFly Travel)</span>
+      </div>
+
+      <h1>امتلك موقع شركتك الاحترافي الشامل<br><span style="color: #38bdf8;">بالاستضافة والدومين مجاناً</span></h1>
+
+      <p>
+        بناءً على الشراكة الناجحة بين شركة <strong>MetoFly Travel</strong> و<strong>المهندس محمد ماهر (Micro Link)</strong>، نقدم لجميع عملاء وشركاء ميتو فلاي فرصة امتلاك موقع إلكتروني فاخر وسريع بنصف التكلفة!
+      </p>
+
+      <div style="margin: 0 auto 35px auto; max-width: 650px; border-radius: 20px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.6); border: 2px solid var(--accent-amber);">
+        <img src="assets/images/metofly_promo_offer.jpg" alt="عرض خاص لعملاء ميتو فلاي" style="width: 100%; height: auto; display: block;">
+      </div>
+
+      <!-- Proof Card: MetoFly Website Showcase -->
+      <div class="proof-card">
+        <div class="proof-info">
+          <div class="proof-icon">
+            <i class="fa-solid fa-plane-departure"></i>
+          </div>
+          <div class="proof-details">
+            <h4>نموذج حي لمعاينة الجودة: موقع MetoFly Travel</h4>
+            <p>تم تصميم وبرمجة المنصة بالكامل بواسطة المهندس محمد ماهر (أنظمة حجز مباشر، أسطول VIP، وحساب سعة المسافرين).</p>
+          </div>
+        </div>
+
+        <a href="https://www.metoflytravel.com/" target="_blank" rel="noopener noreferrer" class="proof-btn">
+          <span>معاينة الموقع الآن</span>
+          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- Free Gifts Included Banner -->
+    <div class="free-value-banner">
+      <h3>
+        <i class="fa-solid fa-circle-check"></i>
+        <span>هدايا مجانية مشمولة داخل العرض بقيمة 3,000 جنيه!</span>
+      </h3>
+      <p style="color: #cbd5e1; font-size: 0.95rem;">لا توجد أي مصاريف خفية، كل ما تحتاجه للإنطلاق أونلاين مشمول بالكامل:</p>
+
+      <div class="free-value-grid">
+        <div class="free-item">
+          <strong>دومين رسمي خاص (.com / .info)</strong>
+          <span>مجاناً لمدة سنة كاملة</span>
+        </div>
+        <div class="free-item">
+          <strong>استضافة سحابية فائقة السرعة</strong>
+          <span>مجاناً لمدة سنة (Cloud Hosting)</span>
+        </div>
+        <div class="free-item">
+          <strong>شهادة أمان مشفرة (SSL 🔒)</strong>
+          <span>مجاناً لحماية الزوار وموقعك</span>
+        </div>
+        <div class="free-item">
+          <strong>ربط نظام واتساب فوري</strong>
+          <span>استقبال طلبات العملاء بضغطة زر</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pricing Cards -->
+    <section class="pricing-grid">
+      
+      <!-- Package 1: Express Launch -->
+      <div class="pricing-card">
+        <h3 class="card-title">باقة الانطلاق السريع (Express Launch)</h3>
+        <p class="card-desc">مثالية للأنشطة التجارية الناشئة، المكاتب، والخدمات التي تحتاج واجهة رسمية جذابة بأقل ميزانية.</p>
+
+        <div class="price-box">
+          <div class="original-price">بدلاً من 7,500 ج.م</div>
+          <div class="current-price">4,490 <span>ج.م</span></div>
+          <div class="savings-badge">وفر 3,000 ج.م مع كود METOFLY</div>
+        </div>
+
+        <ul class="features-list">
+          <li class="highlight"><i class="fa-solid fa-check"></i> <strong>دومين رسمي + استضافة سنة كاملة (مشمولة)</strong></li>
+          <li><i class="fa-solid fa-check"></i> تصميم موقع صفحة رئيسية احترافية (Landing Page)</li>
+          <li><i class="fa-solid fa-check"></i> متجاوب بالكامل 100% مع الموبايل والتابلت والكمبيوتر</li>
+          <li><i class="fa-solid fa-check"></i> ربط مباشر بأزرار الواتساب والاتصال الفوري</li>
+          <li><i class="fa-solid fa-check"></i> معرض للأعمال أو المنتجات أو الخدمات</li>
+          <li><i class="fa-solid fa-check"></i> تسليم وتشغيل كامل خلال 48 إلى 72 ساعة</li>
+        </ul>
+
+        <a href="https://wa.me/201223223463?text=أهلاً%20م/%20محمد%20ماهر،%20أنا%20جاي%20من%20طرف%20ميتو%20فلاي%20(كود%20METOFLY)%20وعايز%20أستفيد%20من%20باقة%20الانطلاق%20السريع%20(4490%20ج.م)" target="_blank" rel="noopener noreferrer" class="btn-claim btn-claim-outline">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>حجز العرض السريع</span>
+        </a>
+      </div>
+
+      <!-- Package 2: Business VIP (Recommended) -->
+      <div class="pricing-card featured">
+        <div class="popular-tag">العرض الأقوى والأكثر طلباً ⭐</div>
+        <h3 class="card-title">باقة الشركات الشاملة (Business VIP)</h3>
+        <p class="card-desc">موقع مؤسسي متكامل متعدد الصفحات باللغتين مثل موقع MetoFly Travel للشركات الطامحة لأعلى ثقة.</p>
+
+        <div class="price-box">
+          <div class="original-price">بدلاً من 10,000 ج.م</div>
+          <div class="current-price">5,900 <span>ج.م</span></div>
+          <div class="savings-badge" style="background: rgba(245, 158, 11, 0.2); color: #fbbf24; border-color: rgba(245, 158, 11, 0.4);">
+            خصم أكثر من 40% لشركاء ميتو فلاي
+          </div>
+        </div>
+
+        <ul class="features-list">
+          <li class="highlight"><i class="fa-solid fa-check-double"></i> <strong>دومين رسمي + استضافة سحابية سنة + إيميل رسمي</strong></li>
+          <li class="highlight"><i class="fa-solid fa-check-double"></i> <strong>دعم كامل للغتين (عربي + إنجليزي فوري بدون تحميل)</strong></li>
+          <li><i class="fa-solid fa-check"></i> موقع متعدد الأقسام والصفحات (عن الشركة، الخدمات، أعمالنا، اتصل بنا)</li>
+          <li><i class="fa-solid fa-check"></i> نظام حجز واستفسارات ذكي يرسل الطلب فوراً للواتساب مع تفاصيل العميل</li>
+          <li><i class="fa-solid fa-check"></i> تهيئة لمحركات البحث (SEO) للظهور على جوجل</li>
+          <li><i class="fa-solid fa-check"></i> خريطة موقع تفاعلية وتكامل مع مواقع التواصل الاجتماعي</li>
+          <li><i class="fa-solid fa-check"></i> دعم فني وصيانة مجانية لمدة 3 شهور كاملة</li>
+        </ul>
+
+        <a href="https://wa.me/201223223463?text=أهلاً%20م/%20محمد%20ماهر،%20أنا%20جاي%20من%20طرف%20ميتو%20فلاي%20(كود%20METOFLY)%20وعايز%20أستفيد%20من%20باقة%20الشركات%20الشاملة%20VIP%20(5900%20ج.م)" target="_blank" rel="noopener noreferrer" class="btn-claim btn-claim-primary">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span>حجز باقة الشركات الشاملة</span>
+        </a>
+      </div>
+
+    </section>
+
+    <!-- Trust & Bio Section -->
+    <div class="trust-section">
+      <img src="assets/images/favicon.png" alt="المهندس محمد ماهر" class="trust-avatar">
+      <h4>المهندس / محمد ماهر</h4>
+      <p class="role">Founder & CEO @ Micro Link | CTO & Principal Architect</p>
+      <p class="bio">
+        مؤسس ورئيس مجلس إدارة شركة <strong>Micro Link</strong> للحلول التكنولوجية لأكثر من 5 سنوات. مقاول ومورد البنية التحتية والأنظمة السحابية لكبرى المستشفيات والفنادق (مستشفيات المواساة الجامعية، مركز القلب الدولي ICC، فندق العلمين التاريخي مراسي، منتجعات بريزي وسيليلا سيوة، وشركة ميتو فلاي ترافيل).
+      </p>
+
+      <div class="trust-links">
+        <a href="https://mohamedmaher.info" target="_blank"><i class="fa-solid fa-globe"></i> زيارة البورتفوليو الشخصي للمهندس</a>
+        <a href="https://www.metoflytravel.com/" target="_blank"><i class="fa-solid fa-plane"></i> زيارة موقع ميتو فلاي ترافيل</a>
+        <a href="https://wa.me/201223223463" target="_blank"><i class="fa-brands fa-whatsapp"></i> تواصل مباشر: 01223223463</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 جميع الحقوق محفوظة — المهندس محمد ماهر | بالتعاون مع شركة MetoFly Travel.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
